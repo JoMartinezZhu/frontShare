@@ -1,21 +1,28 @@
 1.material开发规范
     
-    api 接口命名 ---> 尽量根据接口（getXXX,updateXXX,deleteXXX,addXXX）
-
-    === or == ---> 注意 接口返回数据类型
-
     css Modules (冲突 覆盖 全局污染)
-
-    promise----> 不需要 try-catch，特殊情况（旧的接口、统一 try-catch 捕获时）可以使用
-
-    修改公用组件、工具类，要通知到具体的维护人员（是否有必要修改）
+    pages
+        |---styles
+        |---page1
+            |---page1.js
+            |---page1.scss(静态文件？？？--> static)
+        
+    bind的event 命名 onChange={this.handleXXXChange}
     
-    常量命名（=== or ==) 方便维护修改
-                        命名时注意类型，可以根据后台返回的类型来定义类型
-
+    constants.js 常量定义,保持数据一致性
+        常量命名（=== or ==) 方便维护修改
+           命名时注意类型，可以根据后台返回的类型来定义类型
+    
+    api 接口命名 ---> 尽量根据接口（getXXX,updateXXX,deleteXXX,addXXX）
+    promise----> 不需要 try-catch，特殊情况（旧的接口、统一 try-catch 捕获时）可以使用
+    
+    修改公用组件、工具类，要通知到具体的维护人员（是否有必要修改）
+        注释必须写
+        @author...
+        @params...
+    
     eslint 格式
-    数据mock,
-
+    数据mock,使用yapi
 
 2.SearchTable
   AdvancedForm
