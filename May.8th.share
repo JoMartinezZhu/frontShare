@@ -13,9 +13,20 @@
     常量命名（=== or ==) 方便维护修改
                         命名时注意类型，可以根据后台返回的类型来定义类型
 
+    eslint 格式
+    数据mock,
 
 
 2.SearchTable
   AdvancedForm
 
 3.pull request
+
+  Pull Request是如何工作的
+    Pull Request 需要两个不同的分支或是两个不同的仓库,
+
+    开发者在他们的本地仓库中为某个功能创建一个专门的分支。
+    开发者将分支推送到公共的 GitHub 仓库。
+    开发者用 GitHub 发起一个 Pull Request。
+    其余的团队成员审查代码，讨论并且做出修改。
+    项目维护者将这个功能并入官方的仓库，然后关闭这个 Pull Request
