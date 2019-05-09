@@ -24,8 +24,14 @@
     eslint 格式
     数据mock,使用yapi
     
-    models的使用：
-        根据
+    mirrorx 数据流管理
+     models的使用（未实践，一个想法）：
+        根据后端（接口）的实体来创建 model
+          example：
+            Task---->getDetail,getList,updateXXX
+            Question---->.......
+            pages:
+              page1(page1.model,Task,Question)
 
 2.SearchTable
   AdvancedForm
