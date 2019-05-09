@@ -1,15 +1,19 @@
-1.material开发规范
-    
+1.material开发规范(teaching_admin_fe)
     css Modules (冲突 覆盖 全局污染)
     pages
+        |---layout
         |---styles
+        |---images
         |---page1
+            |---styles
+            |---images
             |---page1.js
-            |---page1.scss(静态文件？？？--> static)
+            |---page1.scss
         
-    bind的event 命名 onChange={this.handleXXXChange}
+    bind 的 event 命名 onChange={this.handleXXXChange}
     
     constants.js 常量定义,保持数据一致性
+        添加注释
         常量命名（=== or ==) 方便维护修改
            命名时注意类型，可以根据后台返回的类型来定义类型
     
@@ -23,15 +27,6 @@
     
     eslint 格式
     数据mock,使用yapi
-    
-    mirrorx 数据流管理
-     models的使用（未实践，一个想法）：
-        根据后端（接口）的实体来创建 model
-          example：
-            Task---->getDetail,getList,updateXXX
-            Question---->.......
-            pages:
-              page1(page1.model,Task,Question)
 
 2.SearchTable
   AdvancedForm
@@ -46,3 +41,14 @@
     开发者用 GitHub 发起一个 Pull Request。
     其余的团队成员审查代码，讨论并且做出修改。
     项目维护者将这个功能并入官方的仓库，然后关闭这个 Pull Request
+
+
+
+mirrorx 数据流管理
+     models的使用（未实践，一个想法）：
+        根据后端（接口）的实体来创建 model
+          example：
+            Task---->getDetail,getList,updateXXX
+            Question---->.......
+            pages:
+              page1(page1.model,Task,Question)
